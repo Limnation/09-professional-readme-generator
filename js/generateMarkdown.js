@@ -1,5 +1,3 @@
-
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.yourProjectTitle}
@@ -9,7 +7,9 @@ function generateMarkdown(data) {
 - What problem does it solve? ${data.descriptionProblemSolve}
 - What did you learn? ${data.descriptionLearn}
 ## Table of Contents
-${data.tableOfContents === true ? `- [Description](#Description)
+${
+  data.tableOfContents === true
+    ? `- [Description](#Description)
 - [Table of Contents](#Table-of-Contents)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -18,15 +18,19 @@ ${data.tableOfContents === true ? `- [Description](#Description)
 - [Features](#Features)
 - [tests](#tests)
 - [questions](#questions)
-`: ``}
+`
+    : ``
+}
 ## Installation
 ${data.installProject}
 ## Usage
-![${data.usageAltText}](${data.usage})
+![${data.usageAltText}](./images/${data.usage})
 ## Credits
 ${data.credits}
 ## License
-${data.licenses === "MIT License" ? `MIT License
+${
+  data.licenses === "MIT License"
+    ? `MIT License
 
 Copyright (c) [${data.licensesYear}] [${data.licensesFullName}]
 
@@ -46,7 +50,13 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.` : data.licenses === "GNU General Public License v3.0" ? `GNU General Public License v3.0` : data.licenses === "GNU Affero General Public License v3.0" ? `GNU Affero General Public License v3.0` : 'No License'}
+SOFTWARE.`
+    : data.licenses === "GNU General Public License v3.0"
+    ? `GNU General Public License v3.0`
+    : data.licenses === "GNU Affero General Public License v3.0"
+    ? `GNU Affero General Public License v3.0`
+    : "No License"
+}
 ## Features
 ${data.features}
 ## Tests
@@ -58,5 +68,5 @@ ${data.questions}
 
 // module.exports is an object we use to store variables or methods to be called on in other js
 module.exports = {
-  generateMarkdown
+  generateMarkdown,
 };

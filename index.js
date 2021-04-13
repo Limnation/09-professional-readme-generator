@@ -52,7 +52,7 @@ function promptUser() {
       {
         type: "input",
         name: "usage",
-        message: "Add screenshots path",
+        message: "Add screenshots Name that is in the images folder",
       },
       {
         type: "input",
