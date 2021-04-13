@@ -24,7 +24,7 @@ ${
 ## Installation
 ${data.installProject}
 ## Usage
-![${data.usageAltText}](./images/${data.usage})
+![${data.usageAltText}](../images/${data.usage}.PNG)
 ## Credits
 ${data.credits}
 ## License
