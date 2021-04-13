@@ -52,7 +52,13 @@ function promptUser() {
       {
         type: "input",
         name: "usage",
-        message: "Add screenshots png Name that is in the images folder",
+        message: "Add screenshots Name that is in the images folder",
+      },
+      {
+        type: "list",
+        name: "usageImageType",
+        message: "Choose an image type",
+        choices: ["PNG", "JPG"],
       },
       {
         type: "input",

@@ -1,15 +1,11 @@
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.yourProjectTitle}
+# test2updated
   ## Description
-- What was your motivation? ${data.descriptionMotivation}
-- Why did you build this project? ${data.descriptionBuild}
-- What problem does it solve? ${data.descriptionProblemSolve}
-- What did you learn? ${data.descriptionLearn}
+- What was your motivation? y
+- Why did you build this project? y
+- What problem does it solve? y
+- What did you learn? y
 ## Table of Contents
-${
-  data.tableOfContents === true
-    ? `- [Description](#Description)
+- [Description](#Description)
 - [Table of Contents](#Table-of-Contents)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -18,21 +14,17 @@ ${
 - [Features](#Features)
 - [tests](#tests)
 - [questions](#questions)
-`
-    : ``
-}
-## Installation
-${data.installProject}
-## Usage
-![${data.usageAltText}](../images/${data.usage}.${data.usageImageType})
-## Credits
-${data.credits}
-## License
-${
-  data.licenses === "MIT License"
-    ? `MIT License
 
-Copyright (c) [${data.licensesYear}] [${data.licensesFullName}]
+## Installation
+y
+## Usage
+![y](../images/y.PNG)
+## Credits
+y
+## License
+MIT License
+
+Copyright (c) [] [y]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -50,23 +42,10 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.`
-    : data.licenses === "GNU General Public License v3.0"
-    ? `GNU General Public License v3.0`
-    : data.licenses === "GNU Affero General Public License v3.0"
-    ? `GNU Affero General Public License v3.0`
-    : "No License"
-}
+SOFTWARE.
 ## Features
-${data.features}
+y
 ## Tests
-${data.tests}
+y
 ## Questions
-${data.questions}
-`;
-}
-
-// module.exports is an object we use to store variables or methods to be called on in other js
-module.exports = {
-  generateMarkdown,
-};
+y
