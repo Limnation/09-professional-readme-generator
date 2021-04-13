@@ -5,19 +5,45 @@ const questions = require('inquirer');
 questions
   .prompt([
     {
-      type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
+        type: 'input',
+        name: 'your-project-title',
+        message: 'What is your Project Title?',
+        
     },
     {
-      type: 'password',
-      message: 'What is your password?',
-      name: 'password',
+        type: 'input',
+        name: 'description-motivation',
+        message: 'What was your motivation?',
     },
     {
-      type: 'password',
-      message: 'Re-enter password to confirm:',
-      name: 'confirm',
+        type: 'input',
+        name: 'description-problem-solve',
+        message: 'What problem does it solve',
+    },
+    {
+        type: 'input',
+        name: 'description-learn',
+        message: 'What did you learn?',
+    },
+    {
+        type: 'input',
+        name: 'install-project',
+        message: 'What are the steps required to install your project?',
+    },
+    {
+        type: 'input',
+        name: 'usage-screenshots-path',
+        message: 'Include screenshots path',
+    },
+    {
+        type: 'input',
+        name: 'credits-collaborators',
+        message: 'List your collaborators',
+    },
+    {
+        type: 'input',
+        name: 'features',
+        message: 'List your Projects Features',
     },
   ])
   .then((response) =>
