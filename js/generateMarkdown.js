@@ -1,12 +1,25 @@
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.yourProjectTitle}
+
+  ${
+    data.licenses === "MIT License"
+      ? `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+      : data.licenses === "GNU General Public License v3.0"
+      ? `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
+      : data.licenses === "GNU Affero General Public License v3.0"
+      ? `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`
+      : "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+  }  
   ## Description
+
 - What was your motivation? ${data.descriptionMotivation}
 - Why did you build this project? ${data.descriptionBuild}
 - What problem does it solve? ${data.descriptionProblemSolve}
 - What did you learn? ${data.descriptionLearn}
+
 ## Table of Contents
+
 ${
   data.tableOfContents === true
     ? `- [Description](#Description)
@@ -21,13 +34,21 @@ ${
 `
     : ``
 }
+
 ## Installation
+
 ${data.installProject}
+
 ## Usage
+
 ![${data.usageAltText}](../images/${data.usage}.${data.usageImageType})
+
 ## Credits
+
 ${data.credits}
+
 ## License
+
 ${
   data.licenses === "MIT License"
     ? `MIT License
@@ -67,11 +88,17 @@ Everyone is permitted to copy and distribute verbatim copies
 of this license document, but changing it is not allowed.`
     : "No License"
 }
+
 ## Features
+
 ${data.features}
+
 ## Tests
+
 ${data.tests}
+
 ## Questions
+
 ${data.questions}
 `;
 }
