@@ -99,8 +99,12 @@ ${data.tests}
 
 ## Questions
 
-${data.questions}
-`;
+[${data.questionsGitHub}'s GitHub profile](https://github.com/${
+    data.questionsGitHub
+  })
+If you have any additional questions your can reach me at ${
+    data.questionsEmail
+  }`;
 }
 
 // module.exports is an object we use to store variables or methods to be called on in other js

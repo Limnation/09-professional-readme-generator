@@ -102,8 +102,13 @@ function promptUser() {
       },
       {
         type: "input",
-        name: "questions",
-        message: "Do you have any questions?",
+        name: "questionsGitHub",
+        message: "Enter your GitHub username",
+      },
+      {
+        type: "input",
+        name: "questionsEmail",
+        message: "Enter your E-mail",
       },
     ])
     .then((data) => {
