@@ -1,7 +1,7 @@
 // fs library package for reading/writing files
 const fs = require("fs");
 
-// TODO: Include packages needed for this application
+// Includes packages needed for this application
 const inquirer = require("inquirer");
 
 // gets Specific functions {gernerateMarkdown} from the export information from generateMarkdown.js
@@ -11,7 +11,7 @@ const { generateMarkdown } = require("./js/generateMarkdown.js");
 // const generateMarkdownInfo = require('./js/generateMarkdown.js');
 
 function promptUser() {
-  // TODO: Create an array of questions for user input
+  // Creates an array of questions for user input
   inquirer
     .prompt([
       {
@@ -129,7 +129,7 @@ function promptUser() {
     });
 }
 
-// TODO: Create a function to initialize app
+// Creates a function to initialize app
 function init() {
   promptUser();
 }

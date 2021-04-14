@@ -1,4 +1,4 @@
-// TODO: Create a function to generate markdown for README
+// Creates a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.yourProjectTitle}
 
@@ -107,7 +107,7 @@ If you have any additional questions your can reach me at ${
   }`;
 }
 
-// module.exports is an object we use to store variables or methods to be called on in other js
+// module.exports is an object we use to store variables or methods to be called on in other js also future proofs in case you need to export more functions
 module.exports = {
   generateMarkdown,
 };
