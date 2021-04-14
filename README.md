@@ -12,6 +12,7 @@ The main objective in this project was to make a fully functional readme.md with
 ![screenshot2](./assets/2.JPG)
 ![screenshot3](./assets/3.JPG)
 ![screenshot4](./assets/4.JPG)
+![screenshot5](./assets/5.JPG)
 
 # link to deployed application
 
