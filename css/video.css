@@ -1,0 +1,7 @@
+.video {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 600px;
+  margin: auto;
+  padding: 0px;
+}
