@@ -52,9 +52,19 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.`
     : data.licenses === "GNU General Public License v3.0"
-    ? `GNU General Public License v3.0`
+    ? `GNU GENERAL PUBLIC LICENSE
+    Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.`
     : data.licenses === "GNU Affero General Public License v3.0"
-    ? `GNU Affero General Public License v3.0`
+    ? `GNU AFFERO GENERAL PUBLIC LICENSE
+    Version 3, 19 November 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.`
     : "No License"
 }
 ## Features
