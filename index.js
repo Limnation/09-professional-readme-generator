@@ -42,7 +42,7 @@ function promptUser() {
       {
         type: "confirm",
         name: "tableOfContents",
-        message: "What u want in your Table of Contents",
+        message: "What do u want a Table of Contents?",
       },
       {
         type: "input",
@@ -73,7 +73,7 @@ function promptUser() {
       {
         type: "list",
         name: "licenses",
-        message: "Choose an open source license",
+        message: "Choose an open-source license",
         choices: [
           "MIT License",
           "GNU General Public License v3.0",
@@ -98,7 +98,7 @@ function promptUser() {
       {
         type: "input",
         name: "tests",
-        message: "provide examples on how to test run your project",
+        message: "Provide examples on how to test run your project",
       },
       {
         type: "input",
