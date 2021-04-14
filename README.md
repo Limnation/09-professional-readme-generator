@@ -18,7 +18,7 @@ The main objective in this project was to make a fully functional readme.md with
 
 [repository](https://github.com/Limnation/09-professional-readme-generator)
 
-[published](https://limnation.github.io/09-professional-readme-generator/)
+[published](https://github.com/Limnation/09-professional-readme-generator/blob/main/markdown/markdownGenerator.md)
 
 [video](https://limnation.github.io/09-professional-readme-generator/)
 
