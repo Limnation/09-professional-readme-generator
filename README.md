@@ -15,9 +15,11 @@ The main objective in this project was to make a fully functional readme.md with
 
 # link to deployed application
 
-[repository](https://github.com/Limnation/06-weather-dashboard)
+[repository](https://github.com/Limnation/09-professional-readme-generator)
 
-[published](https://limnation.github.io/06-weather-dashboard/)
+[published](https://limnation.github.io/09-professional-readme-generator/)
+
+[video](https://limnation.github.io/09-professional-readme-generator/)
 
 ## Your Task
 
